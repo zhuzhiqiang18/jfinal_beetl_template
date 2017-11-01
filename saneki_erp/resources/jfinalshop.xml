@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<jfinalshop> 
+	<description>JFinalShop配置文件</description>  
+	<systemConfig> 
+		<systemName>JFinalShop</systemName>  
+		<systemVersion>V1.0</systemVersion>  
+		<systemDescription>三益商城，跨境电商</systemDescription>
+		<isInstalled>true</isInstalled>  
+		<shopName>三益商城</shopName>
+		<shopUrl>http://www.chanceland.cn/</shopUrl>
+		<shopLogo>/upload/image/logo.gif</shopLogo>  
+		<hotSearch></hotSearch>
+		<metaKeywords>三益商城</metaKeywords>
+		<metaDescription>三益商城,跨境电商</metaDescription>
+		<address>郑州</address>
+		<phone></phone>
+		<zipCode>266000</zipCode>
+		<email>maxp@tutu08.com</email>
+		<currencyType>CNY</currencyType>  .
+		
+		<currencySign>￥</currencySign>  
+		<currencyUnit>元</currencyUnit>  
+		<priceScale>2</priceScale>  
+		<priceRoundType>roundHalfUp</priceRoundType>  
+		<orderScale>2</orderScale>  
+		<orderRoundType>roundHalfUp</orderRoundType>  
+		<certtext></certtext>
+		<storeAlertCount>5</storeAlertCount>  
+		<storeFreezeTime>order</storeFreezeTime>  
+		<uploadLimit>153600</uploadLimit>  
+		<isLoginFailureLock>true</isLoginFailureLock>  
+		<loginFailureLockCount>5</loginFailureLockCount>  
+		<loginFailureLockTime>5</loginFailureLockTime>  
+		<isRegister>true</isRegister>  
+		<watermarkImagePath>/upload/image/watermark.jpg</watermarkImagePath>  
+		<watermarkPosition>bottomRight</watermarkPosition>  
+		<watermarkAlpha>50</watermarkAlpha>  
+		<bigProductImageWidth>500</bigProductImageWidth>  
+		<bigProductImageHeight>500</bigProductImageHeight>  
+		<smallProductImageWidth>300</smallProductImageWidth>  
+		<smallProductImageHeight>300</smallProductImageHeight>  
+		<thumbnailProductImageWidth>140</thumbnailProductImageWidth>  
+		<thumbnailProductImageHeight>140</thumbnailProductImageHeight>  
+		<defaultBigProductImagePath>/upload/image/default_big_product_image.jpg</defaultBigProductImagePath>  
+		<defaultSmallProductImagePath>/upload/image/default_small_product_image.jpg</defaultSmallProductImagePath>  
+		<defaultThumbnailProductImagePath>/upload/image/default_thumbnail_product_image.jpg</defaultThumbnailProductImagePath>  
+		<allowedUploadImageExtension>jpg,jpge,bmp,gif,png</allowedUploadImageExtension>  
+		<allowedUploadMediaExtension/>  
+		<allowedUploadFileExtension/>  
+		<smtpFromMail>1048222543@qq.com</smtpFromMail>  
+		<smtpHost>smtp.qq.com</smtpHost>  
+		<smtpPort>25</smtpPort>  
+		<smtpUsername>1048222543@qq.com</smtpUsername>  
+		<smtpPassword></smtpPassword>  
+		<pointType>productSet</pointType>  
+		<pointScale>1</pointScale>
+		<maxTopicChars>1024</maxTopicChars>
+		<maxTopicImages>9</maxTopicImages>
+	</systemConfig> 
+</jfinalshop>

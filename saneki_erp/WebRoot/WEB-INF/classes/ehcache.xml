@@ -1,0 +1,57 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="/ehcache.xsd"
+    updateCheck="true" monitoring="autodetect"
+    dynamicConfig="true">
+    <diskStore path="c:\cache"/>
+     <!-- 
+        defaultCache:默认的缓存配置信息,如果不加特殊说明,则所有对象按照此配置项处理
+        maxElementsInMemory:设置了缓存的上限,最多存储多少个记录对象
+        eternal:代表对象是否永不过期
+        overflowToDisk:当内存中Element数量达到maxElementsInMemory时，Ehcache将会Element写到   磁盘中
+        -->
+    <defaultCache
+       maxElementsInMemory="20"
+       eternal="false"
+       overflowToDisk="true"
+       timeToIdleSeconds="1800"
+       timeToLiveSeconds="1800">
+    </defaultCache>
+
+    <!--
+    maxElementsInMemory  内存中  cache 中最多可以存放的元素的数量
+    overflowToDisk="true" 内存溢出缓存放在硬盘中
+    eternal="true"  永不过期
+    maxElementsOnDisk="0" 硬盘可放缓存数量 0表示无限2
+    diskPersistent="true" 是否缓存虚拟机重启期数据 
+    timeToLiveSeconds 存活时间
+    app首页缓存
+    -->
+    <cache name="appIndexCache"
+      maxElementsInMemory="1"
+      overflowToDisk="true"
+      eternal="false"
+      timeToLiveSeconds="60"
+      maxElementsOnDisk="0"
+      diskPersistent="true"
+      />
+      <!--分类缓存  存活24小时-->
+       <cache name="appClassify"
+      maxElementsInMemory="10"
+      overflowToDisk="true"
+      eternal="false"
+      timeToLiveSeconds="900"
+      maxElementsOnDisk="0"
+      diskPersistent="true"
+      />
+      
+      
+       <!--评论缓存  存活1分钟-->
+       <cache name="getMessageList"
+      maxElementsInMemory="10"
+      overflowToDisk="true"
+      eternal="false"
+      timeToLiveSeconds="60"
+      maxElementsOnDisk="0"
+      diskPersistent="true"
+      />
+</ehcache>
